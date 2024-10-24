@@ -1,0 +1,53 @@
+/* styles/Filters.module.css */
+.filterContainer {
+  margin-bottom: 2rem;
+}
+
+.filterCloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filterButton {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filterButton:hover, .filterButton.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* styles/PromptList.module.css */
+.promptGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.promptCard {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.promptCard:hover {
+  transform: translateY(-5px);
+}
+
+.category {
+  display: inline-block;
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8 rem;
+  color: #666;
+}
