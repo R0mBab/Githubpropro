@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ПромптХаб - Библиотека промптов</title>
+  <title id="page-title">Стилизация(SREF) - ПРОМПТХАБ</title>
+  <title id="page-title">Посмотреть - ПРОМПТХАБ</title>
+  <title id="page-title">Почитать - ПРОМПТХАБ</title>
+  
+  <meta name="description" content="ПРОМПТХАБ - ваша библиотека промптов для работы с искусственным интеллектом">
+  <meta name="keywords" content="ПРОМПТХАБ, промпты, AI, искусственный интеллект">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">ПромптХаб</a>
+      <div class="language-links">
+        <a href="#" data-lang="ru" class="btn btn-outline-light btn-sm active">RU</a>
+        <a href="#" data-lang="en" class="btn btn-outline-light btn-sm">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <h1 id="main-title" class="text-center mb-4">Библиотека промптов</h1>
+
+    <div class="row mb-4">
+      <div class="col">
+        <input type="text" id="search" class="form-control" placeholder="Поиск промптов..." oninput="filterPrompts()">
+      </div>
+    </div>
+
+    <div id="category-filters" class="mb-4"></div>
+
+    <div id="prompts-container" class="row"></div>
+  </div>
+
+  <footer class="footer mt-auto py-3">
+    <div class="container text-center">
+      <span id="footer-text-ru">Создано для <a href="https://t.me/neirochill" target="_blank">NEUROCHILL</a></span>
+      <span id="footer-text-en" style="display: none;">Created for <a href="https://t.me/neirochill"
+          target="_blank">NEUROCHILL</a></span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="saveToJson.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
